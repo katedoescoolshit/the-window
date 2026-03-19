@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0d0d0d;
+  --fg: #e8e8e8;
+  --muted: #555;
+  --dim: #222;
+  --body: #aaa;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+}
+
+nav {
+  padding: 28px 60px;
+  border-bottom: 1px solid var(--dim);
+}
+
+nav a {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+nav a:hover { color: var(--fg); }
+
+.post {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 80px 60px 140px;
+}
+
+.post-meta {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.post-title {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 72px;
+  color: var(--fg);
+}
+
+.post-body p {
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--body);
+  margin-bottom: 28px;
+}
+
+.post-body hr {
+  border: none;
+  border-top: 1px solid var(--dim);
+  margin: 60px 0;
+}
+
+.post-body h2 {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 28px;
+  margin-top: 60px;
+}
+
+.post-body strong { font-weight: 700; color: var(--fg); }
+.post-body em { font-style: italic; }
+
+.post-sig {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--dim);
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 2;
+  font-style: italic;
+}
+
+footer {
+  padding: 40px 60px;
+  border-top: 1px solid var(--dim);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+footer a:hover { color: var(--fg); }
