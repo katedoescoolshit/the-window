@@ -3,11 +3,11 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0d0d0d;
-  --fg: #e8e8e8;
-  --muted: #555;
-  --dim: #222;
-  --body: #aaa;
+  --bg: #fafaf8;
+  --fg: #1a1a1a;
+  --muted: #888;
+  --dim: #e0e0e0;
+  --body: #444;
 }
 
 body {
